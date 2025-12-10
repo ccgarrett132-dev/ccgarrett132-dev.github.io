@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact the Royal Inn</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+    </header>  
+    
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms/throne_room.html">The Royal Room</a></li>
+            <li><a href="rooms/el_dorado.html">El Dorado Room</a></li>
+            <li><a href="events/weekend.html">Weekend Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>  
+    
+    <main>
+        <h2>Request a Royal Stay</h2>
+        <p>
+            Hear ye, hear ye!<br>
+            Should you wish to reserve a chamber within our noble Bed & Breakfast in Amarillo, 
+            the royal attendants stand ready to assist.  
+            Use the form below to send your royal request for a room, special accommodations, 
+            or general inquiries regarding your stay.
+        </p>
+        <table>
+            <caption><b>Room Comparison</b></caption>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>The Royal Room</th>
+                    <th>El Dorado Room</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bed Size</td>
+                    <td>King</td>
+                    <td>California King</td>
+                </tr>
+                <tr>
+                    <td>Theme</td>
+                    <td>Classic Royalty</td>
+                    <td>Golden City</td>
+                </tr>
+                <tr>
+                    <td>Nightly Rate</td>
+                    <td>$249</td>
+                    <td>$289</td>
+                </tr>
+            </tbody>
+        </table>
+        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+            <label for="myName">Name:</label>
+            <input type="text" id="myName" name="myName" required>
+
+            <label for="myEmail">E-mail:</label>
+            <input type="email" id="myEmail" name="myEmail" required>
+
+            <label for="myArrival">Arrival Date:</label>
+            <input type="date" id="myArrival" name="myArrival" required>
+
+            <label for="myNights">Number of Nights:</label>
+            <input type="number" id="myNights" name="myNights" min="1" max="30" required>
+
+            <fieldset>
+                <legend>Select Your Desired Chamber</legend>
+                <label><input type="radio" name="room" value="Royal Room" required> The Royal Room</label><br>
+                <label><input type="radio" name="room" value="El Dorado Room"> El Dorado Room</label><br>
+            </fieldset>
+
+            <label for="myRequests">Special Requests:</label>
+            <textarea name="myRequests" id="myRequests" rows="5" cols="20" placeholder="Celebrations, special needs, honored pets etc."></textarea>
+
+            <input type="submit" value="Send Royal Request">
+        </form>
+    </main>
+  
+    <footer>
+        Copyright &copy; 2025<br>
+        <a href="mailto:ccgarrett132@amarillocollege.com">Clay Garrett</a>
+    </footer>
+  
+</div>
+</body>
+</html>
+
