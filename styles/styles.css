@@ -1,0 +1,172 @@
+header, nav, main, footer { display: block; }
+body { background-color: #000000;
+       font-family: Verdana, "harrington", sans-serif;
+}
+/* nav background style set up */
+#wrapper { width: 96%;
+    max-width: 960px;
+    margin: auto;
+    margin: auto;
+	background-color: #800000;
+	color: #000000;
+	box-shadow: 5px 5px 5px #000000;
+}
+header {
+    background-image: url("../images/logo1.png"); /* path to your new logo */
+    background-repeat: no-repeat;                 /* don’t tile the image */
+    background-size: contain;                     /* scale logo to fit header proportionally */
+    background-position: center;          /* center logo horizontally and vertically */
+    height: 180px;                                /* adjust to match the logo height */
+    background-color: #610404;                   /* fallback background in case image doesn’t load */
+}
+h1 {
+    margin: 0;
+    padding-left: 350px;  /* pushes text so it doesn't overlap the logo */
+    padding-top: 40px;
+    font-family: Georgia, "harrington", serif;
+    font-size: 4.5em;
+    text-shadow: 3px 3px 3px #90745D;
+}
+
+/* navigation style set up*/
+nav { padding: 5px;
+    background-color: #6e0404;
+    text-align: center;
+}
+nav ul { list-style-type: none; 
+       padding: 0;
+	   margin: 0;
+	 }
+nav li { display: inline-block;
+       font-weight: bold;
+	   padding: 10px 15px;
+}
+nav a { text-decoration: none; }
+nav a:visited { color: #DAA520; }
+nav a:link { color: #DAA520; }
+nav a:hover { color: #000000; }
+nav a:active { color: #000000;
+				text-decoration: underline;}
+
+/* main body design */
+main { background-color: #DAA520;
+          padding: 1px 20px 20px 20px;   
+		  min-height: 500px;
+		  text-align: left;
+}
+main ul li {
+    margin-bottom: 10px; /* adds space below each item */
+}
+main ul {
+    padding-left: 25px;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 2.5;
+}
+main p {
+    margin-top: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333; /* contrasts nicely on gold background */
+}
+
+/* image layout on main body size and placement */
+main img {
+    float: right;
+    margin-left: 50px;   /* space between image and text */
+    margin-bottom: 10px; /* optional */
+}
+#event-images {
+    float: right;
+    width: 250px;   /* or any size you want */
+    margin-left: 30px;
+}
+
+#event-images img {
+    display: block;
+    width: 100%;     /* ensures all images match container width */
+	margin-top: 30px;
+    margin-bottom: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #DAA520; /* matches your theme */
+	float: left;
+}
+
+table, th, td {
+    border: 2px solid #800000; /* maroon border */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #800000;
+    color: gold;
+}
+main::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* footer design */
+footer { background-color: #DAA520;
+       padding: 20px;
+       text-align: center;
+	   font-size: small;
+	   font-style: italic;
+}
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title-price h3 {
+    margin: 0;
+}
+
+.price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #800000; /* matches your theme */
+    background-color: #DAA520;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10em;
+    width: 60%;
+	margin-top: 25%;
+}
+input, textarea {
+    margin-bottom: .5em;
+}
+#talent-section {
+    width: 65%;
+    float: left;
+}
+@media screen and (max-width: 700px) {
+    #talent-section, form {
+        float: none;
+        width: 100%;
+    }
+
+    form {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
