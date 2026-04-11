@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stay Pricing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<div id="wrapper">
+
+    <header></header>
+
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms/throne_room.html">The Royal Room</a></li>
+            <li><a href="rooms/el_durado.html">El Dorado Room</a></li>
+            <li><a href="events/weekend.html">Weekend Events</a></li>
+            <li><a href="amenities.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="fanmail.html">Fan Mail</a></li>
+        </ul>
+    </nav>  
+
+    <main id="pricingPage">
+        <h2 class="fade-me">Plan Your Royal Stay</h2>
+
+<form id="pricingForm" class="fade-me pricing-form">
+
+            <!-- ROOM -->
+            <fieldset>
+                <legend>Select Your Room</legend>
+
+                <label>
+                    <input type="radio" name="room" value="249" required>
+                    Royal Room ($249 per night)
+                </label><br>
+
+                <label>
+                    <input type="radio" name="room" value="289">
+                    El Dorado Room ($289 per night)
+                </label>
+            </fieldset>
+
+            <!-- NIGHTS -->
+            <fieldset>
+                <legend>Length of Stay</legend>
+
+                <label>
+                    Number of Nights:
+                    <input type="number" id="nights" min="1" value="1">
+                </label>
+            </fieldset>
+
+            <!-- EXTRAS -->
+            <fieldset>
+                <legend>Optional Add-Ons</legend>
+
+                <label>
+                    <input type="checkbox" id="laundry">
+                    In-House Laundry Service ($20 per stay)
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="wine">
+                    All Weekend Experience ($100 per stay)
+                </label><br>
+
+                <label>
+                    <input type="checkbox" id="pets">
+                    Honored Pets Welcome Package ($30 per stay)
+                </label>
+            </fieldset>
+
+        </form>
+
+        <!-- TOTAL -->
+        <h3 class="fade-me">
+            Estimated Total: <span id="total">$0.00</span>
+        </h3>
+
+    </main>
+
+    <footer>
+        Copyright &copy; 2025<br>
+        <a href="mailto:ccgarrett132@amarillocollege.com">Clay Garrett</a><br>
+        <script>
+            document.write("This page was last modified on: " + document.lastModified)
+        </script>
+    </footer>
+
+</div>
+
+<!-- YOUR SCRIPT -->
+<script src="scripts/cliffoeds.js"></script>
+
+<!-- FADE EFFECT -->
+<script>
+$(document).ready(function() {
+    $(".fade-me").hide().fadeIn(1500);
+});
+</script>
+
+</body>
+</html>
