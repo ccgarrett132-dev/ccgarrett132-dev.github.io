@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fan Mail</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Your main stylesheet -->
+    <link href="styles/styles.css" rel="stylesheet">
+    
+    <!-- Review script -->
+    <script src="scripts/cliffoeds.js" defer></script>
+</head>
+
+<body>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<div id="wrapper">
+
+<header>
+</header>
+
+<nav>
+    <ul> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rooms/throne_room.html">The Royal Room</a></li>
+        <li><a href="rooms/el_durado.html">El Dorado Room</a></li>
+        <li><a href="events/weekend.html">Weekend Events</a></li>
+        <li><a href="amenities.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="fanmail.html">Fan Mail</a></li>
+        <li><a href="lovelygallery.html">Lovely Gallery</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h2 class="fade-me">Guest Reviews</h2>
+    <p class="fade-me">See what our royal guests have to say about their stay at Cliffoeds!</p>
+
+    <!-- Reviews will be injected here -->
+    <section class="fade-me", id="reviewSection"></section>
+</main>
+
+<footer>
+    Copyright &copy; 2025<br>
+    <a href="mailto:ccgarrett132@amarillocollege.com">Clay Garrett</a><br>
+    <script>
+        document.write("This page was last modified on: " + document.lastModified)
+    </script>
+</footer>
+
+</div>
+
+<script>
+$(document).ready(function() {
+    $(".fade-me").hide().fadeIn(1500);
+});
+</script>
+
+</body>
+</html>
