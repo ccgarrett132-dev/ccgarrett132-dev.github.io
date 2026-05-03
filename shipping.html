@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cliffoeds Checkout</title>
+    <meta charset="utf-8">
+
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <script src="scripts/common.js"></script>
+    <script src="scripts/shipping.js"></script>
+</head>
+
+<body onload="initShippingPage()">
+
+<div id="wrapper">
+
+    <header></header>
+
+    <!-- NAV -->
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms/throne_room.html">The Royal Room</a></li>
+            <li><a href="rooms/el_durado.html">El Dorado Room</a></li>
+            <li><a href="events/weekend.html">Weekend Events</a></li>
+            <li><a href="amenities.html">Pricing</a></li>
+
+        <!-- 🛍️ NEW STORE LINKS -->
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="shipping.html">Checkout</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="fanmail.html">Fan Mail</a></li>
+            <li><a href="lovelygallery.html">Lovely Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Checkout</h2>
+
+        <!-- ORDER SUMMARY -->
+        <div id="summary"></div>
+
+        <hr>
+
+        <!-- SHIPPING FORM -->
+        <form id="form">
+
+            <label>Name:</label>
+            <input id="name" type="text">
+
+            <label>Address:</label>
+            <input id="address" type="text">
+
+            <label>Zip Code:</label>
+            <input id="zip" type="text">
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+        <!-- MESSAGE OUTPUT -->
+        <div id="message"></div>
+
+    </main>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cliffoeds Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Your site CSS -->
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <!-- JS files -->
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/cart.js" defer></script>
+</head>
+
+<body onload="renderCart()">
+
+<div id="wrapper">
+
+    <!-- HEADER (matches index structure) -->
+    <header></header>
+
+    <!-- NAVIGATION (same as other pages) -->
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms/throne_room.html">The Royal Room</a></li>
+            <li><a href="rooms/el_durado.html">El Dorado Room</a></li>
+            <li><a href="events/weekend.html">Weekend Events</a></li>
+            <li><a href="amenities.html">Pricing</a></li>
+
+        <!-- 🛍️ NEW STORE LINKS -->
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="shipping.html">Checkout</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="fanmail.html">Fan Mail</a></li>
+            <li><a href="lovelygallery.html">Lovely Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Your Shopping Cart</h2>
+
+        <!-- CART ITEMS WILL LOAD HERE -->
+        <div id="cart-area"></div>
+
+        <!-- TOTAL -->
+        <h3>Total: $<span id="total-box">0.00</span></h3>
+
+        <!-- NAV BUTTON -->
+        <p>
+            <a href="shop.html">← Continue Shopping</a> |
+            <a href="shipping.html">Checkout →</a>
+        </p>
+
+    </main>
+
+</div>
+</body>
+</html>
