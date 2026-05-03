@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cliffoeds Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles/styles.css" rel="stylesheet">
+
+    <script src="scripts/common.js" defer></script>
+    <script src="scripts/store.js" defer></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <header></header>
+
+    <nav>
+        <ul> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms/throne_room.html">The Royal Room</a></li>
+            <li><a href="rooms/el_durado.html">El Dorado Room</a></li>
+            <li><a href="events/weekend.html">Weekend Events</a></li>
+            <li><a href="amenities.html">Pricing</a></li>
+
+        <!-- 🛍️ NEW STORE LINKS -->
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="shipping.html">Checkout</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="fanmail.html">Fan Mail</a></li>
+            <li><a href="lovelygallery.html">Lovely Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>Cliffoeds Royal Shop</h2>
+        <p>Take home a piece of your royal stay.</p>
+
+        <div class="product-grid">
+
+            <!-- ================= CROWN ================= -->
+            <div class="product">
+                <div class="img-wrap">
+                    <img src="images2/hat.png" alt="Royal Crown">
+                </div>
+
+                <h3>Royal Crown</h3>
+                <p>$15.00</p>
+
+                <p class="desc">
+                    A golden crown for guests and children to wear during royal events and photo sessions.
+                </p>
+
+                <label>Color:</label>
+                <select id="color-1">
+                    <option>Gold</option>
+                    <option>Silver</option>
+                </select>
+
+                <label>Size:</label>
+                <select id="size-1">
+                    <option>One Size</option>
+                </select>
+
+                <label>Qty:</label>
+                <select id="qty-1">
+                    <option>1</option><option>2</option><option>3</option>
+                </select>
+
+                <button onclick="addToCart('Royal Crown', 15, 1)">Add to Cart</button>
+            </div>
+
+            <!-- ================= SHIRT ================= -->
+            <div class="product">
+                <div class="img-wrap">
+                    <img src="images2/tshirt.png" alt="Royal Shirt">
+                </div>
+
+                <h3>Royal T-Shirt</h3>
+                <p>$20.00</p>
+
+                <p class="desc">
+                    A comfortable Cliffoeds themed shirt so you can wear your royal experience anywhere.
+                </p>
+
+                <label>Color:</label>
+                <select id="color-2">
+                    <option>Black</option>
+                    <option>Red</option>
+                </select>
+
+                <label>Size:</label>
+                <select id="size-2">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                    <option>XLarge</option>
+
+                </select>
+
+                <label>Qty:</label>
+                <select id="qty-2">
+                    <option>1</option><option>2</option><option>3</option>
+                </select>
+
+                <button onclick="addToCart('Royal T-Shirt', 20, 2)">Add to Cart</button>
+            </div>
+
+            <!-- ================= KEYCHAIN ================= -->
+            <div class="product">
+                <div class="img-wrap">
+                    <img src="images2/keychain.png" alt="Keychain">
+                </div>
+
+                <h3>Royal Keychain</h3>
+                <p>$5.00</p>
+
+                <p class="desc">
+                    A small souvenir keychain featuring the Cliffoeds royal emblem.
+                </p>
+
+                <label>Color:</label>
+                <select id="color-3">
+                    <option>Gold</option>
+                    <option>Silver</option>
+                </select>
+
+                <label>Size:</label>
+                <select id="size-3">
+                    <option>Standard</option>
+                </select>
+
+                <label>Qty:</label>
+                <select id="qty-3">
+                    <option>1</option><option>2</option><option>3</option>
+                </select>
+
+                <button onclick="addToCart('Royal Keychain', 5, 3)">Add to Cart</button>
+            </div>
+
+            <!-- ================= POSTER ================= -->
+            <div class="product">
+                <div class="img-wrap">
+                    <img src="images2/poster.png" alt="Poster">
+                </div>
+
+                <h3>Castle Poster</h3>
+                <p>$10.00</p>
+
+                <p class="desc">
+                    A decorative castle-themed poster inspired by Cliffoeds Bed & Breakfast.
+                </p>
+
+                <label>Color:</label>
+                <select id="color-4">
+                    <option>Full Color</option>
+                </select>
+
+                <label>Size:</label>
+                <select id="size-4">
+                    <option>Small</option>
+                    <option>Large</option>
+                </select>
+
+                <label>Qty:</label>
+                <select id="qty-4">
+                    <option>1</option><option>2</option>
+                </select>
+
+                <button onclick="addToCart('Castle Poster', 10, 4)">Add to Cart</button>
+            </div>
+
+            <!-- ================= MUG ================= -->
+            <div class="product">
+                <div class="img-wrap">
+                    <img src="images2/mug.png" alt="Mug">
+                </div>
+
+                <h3>Royal Mug</h3>
+                <p>$12.00</p>
+
+                <p class="desc">
+                    A ceramic mug with the Cliffoeds crest, perfect for morning coffee or tea.
+                </p>
+
+                <label>Color:</label>
+                <select id="color-5">
+                    <option>Red</option>
+                    <option>Gold</option>
+                </select>
+
+                <label>Size:</label>
+                <select id="size-5">
+                    <option>Standard</option>
+                </select>
+
+                <label>Qty:</label>
+                <select id="qty-5">
+                    <option>1</option><option>2</option><option>3</option>
+                </select>
+
+                <button onclick="addToCart('Royal Mug', 12, 5)">Add to Cart</button>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+</body>
+</html>
